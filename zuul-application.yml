@@ -22,6 +22,8 @@ zuul:
     plat.path: /plat/**  #路由映射：/plat/**这个路径的访问，都路由到serverId服务
     product.serviceId: product-service
     product.path: /product/**
+    common.serviceId: common-service
+    common.path: /common/**
   ignored-services: "*" #安全加固：忽略这个服务，忽略所有服务使用“*”
   prefix: "/aigou"  #统一前缀：如果有多个服务可以给服务取一个前缀
 ---
@@ -44,5 +46,7 @@ zuul:
     plat.path: /plat/**  #路由映射：/plat/**这个路径的访问，都路由到serverId服务
     product.serviceId: product-service-test
     product.path: /product/**
+    common.serviceId: common-service-test
+    common.path: /common/**
   ignored-services: "*" #安全加固：忽略这个服务，忽略所有服务使用“*”
   prefix: "/aigou"  #统一前缀：如果有多个服务可以给服务取一个前缀
