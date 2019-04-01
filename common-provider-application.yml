@@ -5,6 +5,7 @@ spring:
 ---
 server:
   port: 8848
+  max-http-header-size: 10000000
 spring:
   application:
     name: COMMON-SERVICE
@@ -16,6 +17,7 @@ eureka:
 ---
 server:
   port: 8848
+  max-http-header-size: 10000000
 spring:
   application:
     name: COMMON-SERVICE-TEST
